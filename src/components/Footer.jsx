@@ -7,18 +7,18 @@ function Footer() {
         <div>
           <div className="footer-logos" aria-label="Institutional logos">
             <img
-              className="footer-logo footer-logo-keep"
-              src={assetUrl('keep-logo.png')}
-              alt="KEEP"
-              width="500"
-              height="144"
+              className="footer-logo footer-logo-cuhk-icon"
+              src={assetUrl('cuhk-icon.png')}
+              alt="The Chinese University of Hong Kong"
+              width="1024"
+              height="810"
             />
             <img
-              className="footer-logo footer-logo-cuhk"
-              src={assetUrl('cuhk-logo.png')}
-              alt="The Chinese University of Hong Kong"
-              width="960"
-              height="360"
+              className="footer-logo footer-logo-keep-icon"
+              src={assetUrl('keep-icon.png')}
+              alt="KEEP"
+              width="512"
+              height="512"
             />
           </div>
           <p className="footer-kicker">KEEP, The Chinese University of Hong Kong</p>

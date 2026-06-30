@@ -1,3 +1,17 @@
+import {
+  BasicStatisticsIcon,
+  EssayGraderIcon,
+  GrammarCheckerIcon,
+  SummarizerIcon,
+} from './FeatureIcons.jsx'
+
+const featureIcons = {
+  'Essay Grader': EssayGraderIcon,
+  'Grammar Checker': GrammarCheckerIcon,
+  Summarizer: SummarizerIcon,
+  'Basic Statistics': BasicStatisticsIcon,
+}
+
 function FeatureGrid({ features }) {
   return (
     <section className="section-shell section-stack" id="overview" aria-label="Overview">
@@ -11,16 +25,20 @@ function FeatureGrid({ features }) {
       </div>
 
       <div className="feature-grid">
-        {features.map((feature) => (
+        {features.map((feature) => {
+          const Icon = featureIcons[feature.title]
+
+          return (
           <article className="feature-card" key={feature.title}>
             <span className="feature-icon" aria-hidden="true">
-              {feature.title.slice(0, 1)}
+              {Icon ? <Icon /> : null}
             </span>
             <p className="feature-label">{feature.label}</p>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
           </article>
-        ))}
+          )
+        })}
       </div>
     </section>
   )
