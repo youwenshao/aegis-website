@@ -35,7 +35,7 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
+          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/aegis-website/' }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
