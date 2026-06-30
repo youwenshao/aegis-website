@@ -1,8 +1,26 @@
+import { assetUrl } from '../lib/assets.js'
+
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
         <div>
+          <div className="footer-logos" aria-label="Institutional logos">
+            <img
+              className="footer-logo footer-logo-keep"
+              src={assetUrl('keep-logo.png')}
+              alt="KEEP"
+              width="500"
+              height="144"
+            />
+            <img
+              className="footer-logo footer-logo-cuhk"
+              src={assetUrl('cuhk-logo.png')}
+              alt="The Chinese University of Hong Kong"
+              width="960"
+              height="360"
+            />
+          </div>
           <p className="footer-kicker">KEEP, The Chinese University of Hong Kong</p>
           <h2>AEGIS</h2>
           <p>

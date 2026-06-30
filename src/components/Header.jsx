@@ -1,3 +1,5 @@
+import { assetUrl } from '../lib/assets.js'
+
 const navItems = [
   { href: '#overview', label: 'Overview' },
   { href: '#integration', label: 'VeriGuide' },
@@ -9,7 +11,13 @@ function Header({ demoHref }) {
   return (
     <header className="site-header glass">
       <a className="brand" href="#top" aria-label="AEGIS home">
-        <span className="brand-mark">KEEP</span>
+        <img
+          className="brand-logo"
+          src={assetUrl('keep-logo.png')}
+          alt="KEEP"
+          width="500"
+          height="144"
+        />
         <span className="brand-divider" aria-hidden="true" />
         <span className="brand-name">AEGIS</span>
       </a>

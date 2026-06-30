@@ -121,16 +121,10 @@ code {
   letter-spacing: 0.02em;
 }
 
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 3.3rem;
-  padding: 0.42rem 0.64rem;
-  border-radius: 999px;
-  background: #111827;
-  color: #63d5de;
-  font-size: 0.78rem;
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 2rem;
 }
 
 .brand-divider {
@@ -573,6 +567,30 @@ code {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
   padding: 3.5rem 0;
+}
+
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  display: block;
+  width: auto;
+}
+
+.footer-logo-keep {
+  height: 2.1rem;
+}
+
+.footer-logo-cuhk {
+  height: 2.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.55rem;
+  background: #ffffff;
 }
 
 .site-footer h2 {

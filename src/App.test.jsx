@@ -13,6 +13,8 @@ describe('AEGIS marketing website', () => {
       expect(link).toHaveAttribute('href', 'mailto:keep@cuhk.edu.hk?subject=AEGIS%20demo%20request')
     })
     expect(screen.getByRole('link', { name: /watch a quick tour/i })).toHaveAttribute('href', '#demo')
+    expect(screen.getAllByAltText('KEEP')).toHaveLength(2)
+    expect(screen.getByAltText('The Chinese University of Hong Kong')).toBeInTheDocument()
   })
 
   it('hosts the required feature pillars and VeriGuide integration story', () => {
